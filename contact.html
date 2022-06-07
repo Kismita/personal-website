@@ -5,77 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
    <style class="text/css">
        .bgimage{
-           background-image: url('insta.JPG');
-           background-size:100% 100%;
+           background-size:100%;
            width:100%;
-           height:100vh; 
-           opacity:0.9;
+           height:100vh;
+           position: fixed;
         }
-        .i{
-            size: 20px;
+        .bgimage img{
+            max-width: 80px;
+            margin-left: 450px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-bottom: -120px;
         }
-        .dm{
-            color:#e7e7e7;
+        .bgimage h1{
+            width:100px;
+            margin-top:50px;
+            margin-right:0px;
+            margin-left:650px;
             font-weight:bold;
-            font-size:50px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left:450px ;
+            font-family: 'Comfortaa', cursive;
+            font-size:30px;
+            text-align: center;
+            color:white;
         }
-        .insta{
-            color:#e7e7e7;
-            font-weight:bold;
-            font-size:50px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left:480px ;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .btn{
-           
+        .bgimage h3{
+            width:700px;
+            margin-top:50px;
+            margin-right:0px;
             margin-left:400px;
-            height:40px;
-            width:150px;
-            left:400px;
-            right:600px;
-            top:350px;
-            bottom:50px;
-            font-size: small;
-            font-family:Arial, Helvetica, sans-serif;
+            font-weight:bold;
+            font-family: 'Comfortaa', cursive;
+            font-size:80px;
+            text-align: center;
+            color:white;
+            text-decoration: underline;
+        }
+        .bgimage h4{
+                font-size:30px;
+                font-weight: bold;
+                font-family: 'Yeseva One', cursive;
+                color:whitesmoke;
+                text-align: center;
+                margin-left:100px ;
+                padding-bottom: 50px;
+        }
+        .bgimage h2{
+            color:whitesmoke;
+            font-weight:bold;
+            font-size:50px;
+            font-family: 'Yeseva One', cursive;
+            margin-left:550px ;
+            margin-top:50px;
+            margin-bottom:-30px;
         }
         .btnin{
             padding:10px 15px;
-            border:solid 2px #e7e7e7;
-            border-radius:8px ;
-            background-color:transparent;
-            color:#B628D3;
-            display: inline-block;
-            margin-left:750px;
-            font-family: Arial, Helvetica, sans-serif;
+            border:solid 2px whitesmoke;
+            border-radius:8px;
+            background-color:#FE9935;
+            color:rgb(219, 58, 166);
+            margin-left:0px;
+            font-family: 'Comfortaa', cursive;
             font-weight: bold;
-            line-height:20px;
-            margin-top:-900px;
-            margin-bottom:-700px;
+            line-height:25px;
             cursor: pointer;
-            text-transform: uppercase;
+            text-transform:uppercase;
+            margin-left: 880px;
+            margin-top:-250px;
+            margin-bottom:850px;
         }  
         .btnin:hover{
-        background-color:#B628D3;
+        background-color:#FE3F85;
         color:white;
     } 
+        a{
+          text-decoration: none;
+           color: white;
+         } 
 
 
         
    </style>
 </head>
 <body>
+    <body style="background-color: #D38EA5;">
     <div class="bgimage">
-        <h1 class="dm">You can DM me on,</h1>
-        <h2 class="insta">Instagram-</h2>
-        <button class="btnin"><a href="https://www.instagram.com/beautybykrishma/">BeautyByKrishma</a></button>
+        <h1>#CONTACTS</h1>
+        <h3>Get In Touch</h3>
+        <h4>Look around you: everything is changing. <br>
+        What if the time has come for you to change?</h4>
+        <img src="insta.JPG" alt="a simple logo">
+        <h2>Instagram :</h2>
+        <button class="btnin"><a href="https://www.instagram.com/beautybykrishma/" target="_blank">Beautybykrishma</a></button>
     </div>
-    
 </body>
 </html>
