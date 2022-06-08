@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appoinments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+    .content{
+        margin:0px;
+        padding:0px;
+    }
+    .content h1{
+        font-family: 'Comfortaa', cursive;
+        color:white;
+        font-weight:bold;
+        font-size:60px;
+        text-align: center;
+        margin-top: 50px;
+     }
+    *{
+       margin:0px;
+       padding:0px;
+       text-decoration:none;
+   }
+   .middle{
+       position: absolute;
+       top:100%;
+       left:100%;
+       transform:translate(-50% , -50%);
+   }
+   .card{
+       width:20px;
+       height:100px;
+   }
+   .cardmiddle{
+       margin-top: 100px;
+       margin-left: 100px;
+       cursor: pointer;
+   }
+   .front,.back{
+       width:25%;
+       height:50%;
+       overflow:hidden;
+       backface-visibility: hidden;
+       position: absolute;
+       transition: transform .3s linear;
+       border-radius:20px;
+   }
+   .front img{
+       height:100%;
+       border-radius: 20px;
+    }
+    .front{
+        transform: perspective(800px)rotateY(0deg);
+    }
+    .back{
+        background: rgb(250, 248, 250);
+        transform: perspective(800px)rotateY(180deg);
+    }
+    .backcontent{
+        color:#D38EA5;
+        text-align:center;
+        width:100%;
+        font-size: larger;
+        font-family: 'Comfortaa', cursive;
+    }
+    .backcontent h2{
+        margin-top:20px ;
+    }
+    .backcontent h3{
+        margin-top: 100px;
+        margin-bottom:25px;
+    }
+    .btn{
+    position: absolute;
+    margin:auto;
+    height:50px;
+    width:150px;
+    left:0px;
+    right:600px;
+    top:0px;
+    bottom:10px;
+    font-size: small;
+    }
+    #btnone{
+    padding:10px 15px;
+    border:solid 2px white;
+    border-radius:8px ;
+    background-color:gray;
+    color:white;
+    display: inline-block;
+    margin-left:10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    line-height:20px;
+    margin-top: 100px;
+    cursor: pointer;
+    }  
+   #btnone:hover{
+    background-color:#D48EA5 ;
+    color:white;
+    }
+   a{
+    text-decoration: none;
+    color: white;
+    } 
+   .cardmiddle:hover .front{
+    transform: perspective(800px)rotateY(-180deg);
+    }
+    .cardmiddle:hover .back{
+    transform: perspective(800px)rotateY(0deg);
+    }
+
+          /*///////////2nd card////////*/
+
+    .center{
+       position: absolute;
+       top:100%;
+       left:100%;
+       transform:translate(-50% , -50%);
+   }
+   .card{
+       width:30px;
+       height:100px;
+   }
+   .cardcenter{
+       margin-top: 100px;
+       margin-left: 570px;
+       cursor: pointer;
+   }
+   .front2,.back2{
+       width:25%;
+       height:50%;
+       overflow:hidden;
+       backface-visibility: hidden;
+       position: absolute;
+       transition: transform .3s linear;
+       border-radius:20px;
+   }
+   .front2 img{
+       height:100%;
+       border-radius: 20px;
+    }
+    .front2{
+        transform: perspective(800px)rotateY(0deg);
+    }
+    .back2{
+        background: rgb(250, 248, 250);
+        transform: perspective(800px)rotateY(180deg);
+    }
+    .backcontent2{
+        color:#D38EA5;
+        text-align:center;
+        width:100%;
+        font-size: larger;
+        font-family: 'Comfortaa', cursive;
+    }
+    .backcontent2 h2{
+        margin-top:20px ;
+    }
+    .backcontent2 h3{
+        margin-top: 100px;
+        margin-bottom:25px;
+    }
+    .cardcenter:hover .front2{
+    transform: perspective(800px)rotateY(-180deg);
+    }
+    .cardcenter:hover .back2{
+    transform: perspective(800px)rotateY(0deg);
+    }
+
+
+             /*/////////3rd card//////////*/
+    .right{
+       position: absolute;
+       top:100%;
+       left:100%;
+       transform:translate(-50% , -50%);
+   }
+   .card{
+       width:30px;
+       height:100px;
+   }
+   .cardright{
+       margin-top: 100px;
+      margin-left: 990px;
+       cursor: pointer;
+   }
+   .front3,.back3{
+       width:25%;
+       height:50%;
+       overflow:hidden;
+       backface-visibility: hidden;
+       position: absolute;
+       transition: transform .3s linear;
+       border-radius:20px;
+   }
+   .front3 img{
+       height:100%;
+       border-radius: 20px;
+
+    }
+    .front3{
+        transform: perspective(800px)rotateY(0deg);
+    }
+    .back3{
+        background: rgb(250, 248, 250);
+        transform: perspective(800px)rotateY(180deg);
+    }
+    .backcontent3{
+        color:#D38EA5;
+        text-align:center;
+        width:100%;
+        font-size: larger;
+        font-family: 'Comfortaa', cursive;
+    }
+    .backcontent3 h2{
+        margin-top:20px ;
+    }
+    .backcontent3 h3{
+        margin-top: 100px;
+        margin-bottom:25px;
+    }
+    .cardright:hover .front3{
+    transform: perspective(800px)rotateY(-180deg);
+    }
+    .cardright:hover .back3{
+    transform: perspective(800px)rotateY(0deg);
+    }
+</style>
+
+</head>
+<body>
+    <body style="background-color: #D38EA5;"></body>
+    <div class="content">
+    <h1>Book An Appoinment</h1>
+    </div>
+    <div class="cardmiddle">
+        <div class="front">
+          <img src="3.jpeg"alt="">
+        </div>
+        <div class="back">
+            <div class="backcontent">
+              <h2>Guest Makeup</h2>
+              <hr color="#D48EA5">
+              <h3>1 hr<br>Rs.5000/-</h3>
+              <button id="btnone"> <a href="#" target="_blank">BOOK NOW</a> </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cardcenter">
+        <div class="front2">
+          <img src="2.jpeg"alt="">
+        </div>
+        <div class="back2">
+            <div class="backcontent2">
+              <h2>Bridal Makeup</h2>
+              <hr color="#D48EA5">
+              <h3>1:30 min<br>Rs.12,000/-</h3>
+              <button id="btnone"> <a href="#" target="_blank">BOOK NOW</a> </button>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="cardright">
+        <div class="front3">
+          <img src="5.jpeg"alt="">
+        </div>
+        <div class="back3">
+            <div class="backcontent3">
+              <h2>Events Makeup</h2>
+              <hr color="#D48EA5">
+              <h3>1 hr <br>Rs.8000/-</h3>
+              <button id="btnone"> <a href="#" target="_blank">BOOK NOW</a> </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
